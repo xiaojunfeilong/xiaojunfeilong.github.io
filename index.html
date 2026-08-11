@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>榆木的愚 · 制造业数字化与AI落地</title>
+<meta name="description" content="12年制造业信息化老兵。ERP/OA/CRM系统集成、企业数字化咨询、AI效率落地与AI内容工具。">
+<style>
+  :root{
+    --bg:#151310; --bg2:#1e1a15; --card:#242019; --line:#3a332a;
+    --fg:#efe7d9; --muted:#a99f8e; --accent:#e8a84c; --accent2:#c97b2e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{padding:80px 0 60px;background:linear-gradient(180deg,var(--bg2),var(--bg))}
+  .tag{display:inline-block;border:1px solid var(--accent2);color:var(--accent);border-radius:20px;padding:2px 14px;font-size:13px;margin-bottom:18px}
+  h1{font-size:clamp(28px,5vw,44px);letter-spacing:2px}
+  .sub{color:var(--muted);font-size:clamp(15px,2.5vw,18px);margin-top:14px;max-width:640px}
+  .nums{display:flex;gap:36px;margin-top:32px;flex-wrap:wrap}
+  .nums div b{font-size:26px;color:var(--accent);display:block}
+  .nums div span{font-size:13px;color:var(--muted)}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:24px;margin-bottom:8px}
+  .lead{color:var(--muted);margin-bottom:28px;font-size:15px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{font-size:17px;margin-bottom:8px;color:var(--accent)}
+  .card p{font-size:14px;color:var(--muted)}
+  .card .price{margin-top:10px;font-size:13px;color:var(--fg);opacity:.85}
+  .case{border-left:3px solid var(--accent2);padding:6px 0 6px 18px;margin-bottom:18px}
+  .case b{display:block;font-size:16px}
+  .case span{font-size:14px;color:var(--muted)}
+  .about p{color:var(--muted);max-width:720px;margin-bottom:12px}
+  .contact .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  footer{padding:36px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  @media (max-width:600px){ header{padding:56px 0 40px} }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="tag">制造业数字化 × AI 落地</span>
+    <h1>榆木的愚</h1>
+    <p class="sub">12 年制造业信息化老兵。白天让 ERP、OA、CRM 这些系统老实干活，
+    晚上研究怎么让 AI 替人干活。信条：<b>系统要落地，落地要闭环。</b></p>
+    <div class="nums">
+      <div><b>12年</b><span>制造业信息化实战</span></div>
+      <div><b>3套</b><span>核心系统深度集成经验</span></div>
+      <div><b>20+</b><span>AI 自动化流水线落地</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <h2>服务清单</h2>
+    <p class="lead">从"要不要上系统"到"系统之间自动跑"，再到"AI 替你出活"，全链路都做。</p>
+    <div class="grid">
+      <div class="card">
+        <h3>企业数字化咨询</h3>
+        <p>ERP 选型避坑、上线规划、流程梳理、老板驾驶舱报表体系。小工厂上系统最容易死在哪，我都踩过。</p>
+        <p class="price">按次咨询 / 按项目顾问</p>
+      </div>
+      <div class="card">
+        <h3>系统集成开发</h3>
+        <p>金蝶云星空二次开发（插件/WebAPI/跨组织单据流），泛微OA工作流集成，ERP↔OA↔CRM 数据自动同步。</p>
+        <p class="price">单接口起做，远程交付</p>
+      </div>
+      <div class="card">
+        <h3>AI 效率落地</h3>
+        <p>企业 AI 办公内训（真实案例教学），"自动抓数→自动报告→自动推送"流程搭建，把重复劳动交给脚本。</p>
+        <p class="price">内训半天起 / 流程按件</p>
+      </div>
+      <div class="card">
+        <h3>AI 工具与内容</h3>
+        <p>AI 产品图（白底/场景/详情页）、定制歌曲、短视频内容流水线、产品外观设计方案 PDF。当天交付。</p>
+        <p class="price">闲鱼店 9.9 元起可体验</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <h2>实战案例（脱敏）</h2>
+    <p class="lead">全部是真实落地并在生产环境跑着的东西，不是 PPT。</p>
+    <div class="case"><b>热处理炉温自动采集链路</b>
+      <span>MQTT 采集炉温 → OA 表单自动生成 → ERP 工单关联，车间数据从"手抄"变"零人工"。</span></div>
+    <div class="case"><b>ERP ↔ CRM 双向同步</b>
+      <span>7000+ 历史单据回填 + 增量自动同步，销售在 CRM 看到的出库状态与 ERP 秒级一致。</span></div>
+    <div class="case"><b>单据自动流转引擎</b>
+      <span>采购入库自动生成跨组织调拨、收料通知自动生成固资验收单，审批过了系统自己建单。</span></div>
+    <div class="case"><b>AI 内容自动化流水线</b>
+      <span>热点选题 → 脚本 → AI 出片配音配乐 → 自动发布，短视频日更全程无人值守。</span></div>
+    <div class="case"><b>AI 产品外观设计管线</b>
+      <span>实物参考照 → 避侵权重设计 → 三视图渲染 → 方案 PDF，4 张图成本不到 2 元。</span></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>关于我</h2>
+    <p>江西人，计算机科班，从产线信息化做到集团 IT 负责人。金蝶云星空、泛微 e-cology、CRM 的二开和集成是老本行，SQL 写得比 PPT 好。</p>
+    <p>2025 年起全面转向 AI 工程化落地：不聊概念，只做能跑起来、有产出、可验证的自动化。</p>
+    <p>为什么叫"榆木的愚"？榆木疙瘩的愚，大智若愚的愚——系统这行，慢就是快。</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>联系合作</h2>
+    <p class="lead">咨询、开发、内训、AI 内容，都可以聊。</p>
+    <div class="grid">
+      <div class="card"><h3>邮箱</h3><p>bigtruck0320@gmail.com</p></div>
+      <div class="card"><h3>抖音</h3><p>@榆木的愚（抖音号 66066097050）</p></div>
+      <div class="card"><h3>闲鱼小店</h3><p>搜索用户 tbNick_wii6m：AI 定制歌曲 / AI 产品摄影 / 3D 学习游戏</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 榆木的愚 · 系统要落地，落地要闭环</footer>
+</body>
+</html>
