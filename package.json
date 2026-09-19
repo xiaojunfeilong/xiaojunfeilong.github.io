@@ -1,0 +1,22 @@
+{
+  "name": "yumu-de-yu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "榆木的愚 — 制造业数字化与AI落地 个人博客",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve --port 43127",
+    "dev": "eleventy --serve --port 43127",
+    "build": "eleventy",
+    "preview": "npx --yes serve dist -l 43127"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "luxon": "^3.7.2"
+  }
+}

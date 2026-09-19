@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">{{ site.name }}</p>
+      <p class="footer-creed">「{{ site.creed }}」</p>
+    </div>
+    <nav aria-label="页脚导航">
+      <ul class="footer-links">
+        {%- for item in site.nav %}
+        <li><a href="{{ item.url | url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+        <li><a href="{{ '/feed.xml' | url }}">订阅</a></li>
+      </ul>
+    </nav>
+    <p class="footer-meta">© {{ site.year }} {{ site.author }} · 静态站点，无追踪脚本</p>
+  </div>
+</footer>

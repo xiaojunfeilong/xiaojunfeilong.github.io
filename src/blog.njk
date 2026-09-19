@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+title: 文章
+description: 制造业数字化闭环、ERP/OA 集成、AI 落地与个人知识库的实操笔记。
+---
+<div class="container blog-index page">
+  <header class="page-header">
+    <p class="eyebrow">Blog</p>
+    <h1>文章</h1>
+    <p class="lede">按时间排列的现场笔记：数字化闭环、系统集成、AI 流程化，以及把经验沉淀成可复用资产的方法。</p>
+  </header>
+
+  <div class="filters" role="group" aria-label="按标签筛选">
+    <button type="button" class="tag" data-tag-filter="全部" aria-pressed="true">全部</button>
+    {%- for tag in collections.tagList %}
+    <button type="button" class="tag" data-tag-filter="{{ tag }}" aria-pressed="false">{{ tag }}</button>
+    {%- endfor %}
+  </div>
+
+  {%- if collections.posts.length %}
+  <div class="post-grid" data-post-list>
+    {%- for post in collections.posts %}
+    <div data-tags="{{ post.data.tags | join(',') }}">
+      {% include "partials/post-card.njk" %}
+    </div>
+    {%- endfor %}
+  </div>
+  <p class="filter-empty" data-empty hidden>这个标签下暂时没有文章。</p>
+  {%- else %}
+  <p>还没有文章。</p>
+  {%- endif %}
+</div>

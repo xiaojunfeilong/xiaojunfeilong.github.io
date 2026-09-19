@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>榆木的愚</title>
+  <subtitle>制造业数字化与AI落地</subtitle>
+  <link href="/feed.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <id>/</id>
+  <author>
+    <name>榆木的愚</name>
+    <email>hello@example.com</email>
+  </author>
+  <entry>
+    <title>系统要落地，落地要闭环：制造业数字化的一条硬标准</title>
+    <link href="/blog/manufacturing-closed-loop/"/>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <id>/blog/manufacturing-closed-loop/</id>
+    <content type="html">很多项目停在「能看数」。真正能用的数字化，是触发、执行、记录、反馈能转完一圈，并且对得上账。</content>
+  </entry>
+  <entry>
+    <title>ERP 与 OA 集成：我反复踩过的坑，以及一套可复用的方法论</title>
+    <link href="/blog/erp-oa-integration/"/>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <id>/blog/erp-oa-integration/</id>
+    <content type="html">不要从「把两边数据全同步」起手。先定主数据权属、单据幂等和对账口，集成才不会在上线第三周炸开。</content>
+  </entry>
+  <entry>
+    <title>AI 落地：从个人脚本到可交接的流程</title>
+    <link href="/blog/ai-from-script-to-process/"/>
+    <updated>2026-05-21T00:00:00Z</updated>
+    <id>/blog/ai-from-script-to-process/</id>
+    <content type="html">能在自己电脑上跑通的脚本，还不是落地。把它变成有输入、有输出、有异常分支和人审点的流程，团队才能接走。</content>
+  </entry>
+  <entry>
+    <title>个人知识库与自动化：把现场经验变成可复用的资产</title>
+    <link href="/blog/knowledge-base-automation/"/>
+    <updated>2026-03-09T00:00:00Z</updated>
+    <id>/blog/knowledge-base-automation/</id>
+    <content type="html">笔记软件堆满不等于有知识库。用「问题—情境—决策—结果」收割项目，再用自动化减少采集成本，经验才不会只停在当事人脑子里。</content>
+  </entry>
+  <entry>
+    <title>数字化项目为什么停在报表层（以及怎么把它拽回执行层）</title>
+    <link href="/blog/why-projects-stop-at-reports/"/>
+    <updated>2026-01-16T00:00:00Z</updated>
+    <id>/blog/why-projects-stop-at-reports/</id>
+    <content type="html">报表让管理层舒服，执行层才让车间省事。若只能做一件事，请先选一个会改变明天动作的闭环，而不是再加一块大屏。</content>
+  </entry>
+</feed>

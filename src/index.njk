@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+title: 首页
+description: 12年制造业信息化实践者。系统要落地，落地要闭环。写数字化、系统集成与AI落地的实操笔记。
+---
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">{{ site.role }}</p>
+    <h1>{{ site.name }}</h1>
+    <p class="hero-tagline">{{ site.tagline }}</p>
+    <p class="creed">「{{ site.creed }}」</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/blog/' | url }}">阅读文章</a>
+      <a class="btn btn-ghost" href="{{ '/about/' | url }}">了解服务</a>
+    </div>
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><strong>12 年</strong><span>制造业信息化实践</span></div>
+      <div class="stat" role="listitem"><strong>闭环</strong><span>从单据到执行可核验</span></div>
+      <div class="stat" role="listitem"><strong>AI</strong><span>从脚本推进到流程</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="section-kicker">Blog</p>
+        <h2>最近文章</h2>
+      </div>
+      <a class="text-link" href="{{ '/blog/' | url }}">全部文章</a>
+    </div>
+    {%- if collections.posts.length %}
+    <div class="post-grid">
+      {%- for post in collections.posts | head(3) %}
+        {% include "partials/post-card.njk" %}
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <p>还没有文章。</p>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container about-blurb">
+    <div class="panel">
+      <h2>关于这间工作室笔记</h2>
+      <p>我在工厂现场把 ERP、OA、MES 这类系统接到能跑、能对账、能交接。近几年把同样的方法用在 AI：不追求一次上大模型，而是先把重复劳动做成可复用的闭环。</p>
+      <p>这里只写能拿到现场用的东西：集成怎么拆、数据怎么对、AI 何时该停在人审。概念贴不发。</p>
+      <p><a class="text-link" href="{{ '/about/' | url }}">完整介绍与脱敏案例 →</a></p>
+    </div>
+    <div class="panel">
+      <h2>可合作的方向</h2>
+      <ul>
+        <li>企业数字化咨询</li>
+        <li>系统集成开发</li>
+        <li>AI 效率落地</li>
+        <li>AI 工具与内容</li>
+      </ul>
+      <p><a class="text-link" href="{{ '/contact/' | url }}">预约交流 →</a></p>
+    </div>
+  </div>
+</section>

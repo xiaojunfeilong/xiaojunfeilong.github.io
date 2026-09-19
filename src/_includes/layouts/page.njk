@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+<article class="page container">
+  <header class="page-header">
+    <p class="eyebrow">{{ eyebrow or site.tagline }}</p>
+    <h1>{{ title }}</h1>
+    {%- if lede %}
+    <p class="lede">{{ lede }}</p>
+    {%- endif %}
+  </header>
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

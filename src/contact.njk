@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+permalink: /contact/
+title: 联系
+description: 咨询、集成开发、AI 落地与内容合作。占位邮箱可在站点配置中替换。抖音号「榆木的愚」。
+---
+<div class="container page wide">
+  <header class="page-header">
+    <p class="eyebrow">Contact</p>
+    <h1>联系合作</h1>
+    <p class="lede">咨询、系统集成、内训、AI 流程都可以聊。先用三句话说明：现在卡在哪、希望两周内看见什么、现有系统叫什么品类即可。</p>
+  </header>
+
+  <div class="contact-layout">
+    <form class="panel form-grid" data-contact-form data-email="{{ site.email }}" novalidate>
+      <div>
+        <label for="name">称呼</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="怎么称呼你">
+      </div>
+      <div>
+        <label for="company">公司 / 工厂（选填）</label>
+        <input id="company" name="company" type="text" autocomplete="organization" placeholder="不用写全称，行业+规模即可">
+      </div>
+      <div>
+        <label for="message">需求简述</label>
+        <textarea id="message" name="message" placeholder="例如：OA 审批通过后要自动在 ERP 生成采购单，现在靠人工补录。"></textarea>
+      </div>
+      <div>
+        <label for="email-display">联系邮箱（占位，请改配置）</label>
+        <input id="email-display" type="email" value="{{ site.email }}" readonly>
+        <p class="hint">站点不会后台发信。提交后会打开你的邮件客户端，收件人来自 <code>src/_data/site.json</code> 的 <code>email</code> 字段。</p>
+      </div>
+      <button class="btn btn-primary" type="submit">用邮件发送</button>
+      <p class="form-status" data-form-status role="status"></p>
+    </form>
+
+    <aside class="contact-aside">
+      <p class="eyebrow">公开渠道</p>
+      <dl>
+        <dt>邮箱</dt>
+        <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+        <dt>抖音号</dt>
+        <dd>「{{ site.douyin }}」（仅作账号名提示，不放外链、不嵌播放器）</dd>
+        <dt>不在这里处理的事</dt>
+        <dd>家庭、健康、财务与雇主法务名称请勿写入表单。公开页面只谈可复用的方法。</dd>
+      </dl>
+    </aside>
+  </div>
+</div>

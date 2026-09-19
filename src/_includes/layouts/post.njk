@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+---
+<article class="post container">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+      {%- if tags %}
+      <span class="meta-sep" aria-hidden="true">·</span>
+      <span class="tag-row">
+        {%- for tag in tags %}
+        <a class="tag" href="{{ '/blog/' | url }}?tag={{ tag | urlencode }}">{{ tag }}</a>
+        {%- endfor %}
+      </span>
+      {%- endif %}
+    </p>
+    <h1>{{ title }}</h1>
+    {%- if excerpt %}
+    <p class="lede">{{ excerpt }}</p>
+    {%- endif %}
+  </header>
+  <div class="prose article-body">
+    {{ content | safe }}
+  </div>
+  <footer class="post-end">
+    <p>写于现场，不写空概念。若这篇对你的项目有用，欢迎到 <a href="{{ '/contact/' | url }}">联系页</a> 交流。</p>
+    <a class="text-link" href="{{ '/blog/' | url }}">← 返回文章列表</a>
+  </footer>
+</article>

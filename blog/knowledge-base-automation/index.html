@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人知识库与自动化：把现场经验变成可复用的资产 · 榆木的愚</title>
+<meta name="description" content="制造业信息化场景下的个人知识库方法：结构、采集自动化、与检查清单的连接，以及每周回顾。">
+<meta name="author" content="榆木的愚">
+<link rel="canonical" href="/blog/knowledge-base-automation/">
+<meta name="theme-color" content="#0e0d0a">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="榆木的愚">
+<meta property="og:title" content="个人知识库与自动化：把现场经验变成可复用的资产 · 榆木的愚">
+<meta property="og:description" content="制造业信息化场景下的个人知识库方法：结构、采集自动化、与检查清单的连接，以及每周回顾。">
+<meta property="og:url" content="/blog/knowledge-base-automation/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="/assets/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="个人知识库与自动化：把现场经验变成可复用的资产 · 榆木的愚">
+<meta name="twitter:description" content="制造业信息化场景下的个人知识库方法：结构、采集自动化、与检查清单的连接，以及每周回顾。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": "个人知识库与自动化：把现场经验变成可复用的资产 · 榆木的愚",
+  "headline": "个人知识库与自动化：把现场经验变成可复用的资产",
+  "description": "制造业信息化场景下的个人知识库方法：结构、采集自动化、与检查清单的连接，以及每周回顾。",
+  "url": "/blog/knowledge-base-automation/",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "榆木的愚"
+  }
+}
+</script>
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="alternate" type="application/atom+xml" title="榆木的愚" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="榆木的愚 首页">
+      <span class="brand-mark" aria-hidden="true">榆</span>
+      <span class="brand-text">
+        <span class="brand-name">榆木的愚</span>
+        <span class="brand-tagline">制造业数字化与AI落地</span>
+      </span>
+    </a>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-nav-toggle
+    >
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">打开导航菜单</span>
+    </button>
+    <nav id="site-nav" class="site-nav" data-nav aria-label="主导航">
+      <ul class="nav-list">
+        <li>
+          <a
+            href="/"
+            
+          >首页</a>
+        </li>
+        <li>
+          <a
+            href="/blog/"
+            
+          >文章</a>
+        </li>
+        <li>
+          <a
+            href="/about/"
+            
+          >关于</a>
+        </li>
+        <li>
+          <a
+            href="/contact/"
+            
+          >联系</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main id="main" class="main" tabindex="-1">
+      <article class="post container">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="2026-03-09">2026年03月09日</time>
+      <span class="meta-sep" aria-hidden="true">·</span>
+      <span class="tag-row">
+        <a class="tag" href="/blog/?tag=%E7%9F%A5%E8%AF%86%E5%BA%93">知识库</a>
+        <a class="tag" href="/blog/?tag=%E8%87%AA%E5%8A%A8%E5%8C%96">自动化</a>
+      </span>
+    </p>
+    <h1>个人知识库与自动化：把现场经验变成可复用的资产</h1>
+    <p class="lede">笔记软件堆满不等于有知识库。用「问题—情境—决策—结果」收割项目，再用自动化减少采集成本，经验才不会只停在当事人脑子里。</p>
+  </header>
+  <div class="prose article-body">
+    <p>做集成的人通常不缺经历，缺的是第二次遇见同类问题时能在十分钟内找到「上次到底怎么收的场」。文件夹里一百篇会议纪要，检索出来仍是一段段正确的废话。</p>
+<p>知识库要服务的是 <strong>下次决策</strong>，不是存档癖。</p>
+<h2>一条笔记只回答一类问题</h2>
+<p>我强制每条经验笔记用四个标题，少一个就不算写完：</p>
+<ul>
+<li><strong>问题</strong>：现场哪一步卡死，谁在等。</li>
+<li><strong>情境</strong>：系统品类、数据质量、组织分工。不写企业法定名称，写「离散机加、双组织、OA 先于 ERP」。</li>
+<li><strong>决策</strong>：我们选了什么，明确放弃了什么。</li>
+<li><strong>结果</strong>：上线后两周的对账情况。失败也写，失败更值钱。</li>
+</ul>
+<p>标签保持很短：<code>集成</code> <code>主数据</code> <code>对账</code> <code>AI流程</code> <code>人审</code>。标签一多，就等于没有标签。</p>
+<h2>自动化采集，而不是自动化写作</h2>
+<p>不要让模型帮你「总结一周工作」。它会写得完整而不可用。自动化该做的是降低 <strong>收集成本</strong>：</p>
+<ul>
+<li>从工单/聊天里抽出「今天处理的异常单号」列表，提醒你补一条四段笔记。</li>
+<li>把重复出现的报错原文存进案例库，人工只写原因和对策。</li>
+<li>周报草稿只列出事实：对平了几笔、未对平几笔、待决策两项。句子你自己写。</li>
+</ul>
+<p>生成式模型适合把结构填进模板，不适合替你判断哪件事值得留下。</p>
+<h2>让笔记连上检查清单</h2>
+<p>知识库如果不改变下周的动作，它就是博客。我把高频笔记沉淀成清单，挂在具体闭环上，例如「OA→ERP 采购申请」上线前 12 问：</p>
+<ol>
+<li>业务键是什么？</li>
+<li>重复回调会怎样？</li>
+<li>退回后数量以谁为准？</li>
+<li>对账邮件发给谁？</li>
+</ol>
+<p>项目结束时，用清单打分，而不是用「感觉还顺利」。分数低的项，回去补笔记。</p>
+<h2>每周 30 分钟的回顾闭环</h2>
+<p>固定三个动作：</p>
+<ol>
+<li>本周新增笔记是否都有「结果」段。没有结果的标成草稿，不允许对外分享。</li>
+<li>有没有同一类问题出现第三次。第三次就写成清单或脚本，不要再当新问题。</li>
+<li>删掉一条过时结论。知识库要代谢，否则检索噪声会把人逼回聊天记录。</li>
+</ol>
+<p>榆木疙瘩的愚，用在这里刚刚好：少收藏，多复盘；少生成，多对账。经验变成资产的标志，是新人能按你的清单把一个小闭环跑通，而不是把你的笔记软件装好。</p>
+
+  </div>
+  <footer class="post-end">
+    <p>写于现场，不写空概念。若这篇对你的项目有用，欢迎到 <a href="/contact/">联系页</a> 交流。</p>
+    <a class="text-link" href="/blog/">← 返回文章列表</a>
+  </footer>
+</article>
+
+    </main>
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">榆木的愚</p>
+      <p class="footer-creed">「系统要落地，落地要闭环」</p>
+    </div>
+    <nav aria-label="页脚导航">
+      <ul class="footer-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/blog/">文章</a></li>
+        <li><a href="/about/">关于</a></li>
+        <li><a href="/contact/">联系</a></li>
+        <li><a href="/feed.xml">订阅</a></li>
+      </ul>
+    </nav>
+    <p class="footer-meta">© 2026 榆木的愚 · 静态站点，无追踪脚本</p>
+  </div>
+</footer>
+
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

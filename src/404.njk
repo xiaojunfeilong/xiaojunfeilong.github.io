@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+permalink: /404.html
+title: 页面不存在
+description: 你访问的页面不存在。
+eleventyExcludeFromCollections: true
+---
+<div class="container not-found">
+  <p class="eyebrow">404</p>
+  <h1>这条路径没有闭环</h1>
+  <p>页面不存在或已更换地址。</p>
+  <p>
+    <a class="btn btn-primary" href="{{ '/' | url }}">回到首页</a>
+    <a class="btn btn-ghost" href="{{ '/blog/' | url }}">看文章</a>
+  </p>
+</div>
